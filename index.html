@@ -2,7 +2,7 @@
 layout: default
 ---
 <ul>
-{% for article in articles %}
+{% for article in articles.test_category.meals %}
   <li>{{ article.title }}: {{ article.url }}</li>
 {% endfor %}
 </ul>
