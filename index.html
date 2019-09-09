@@ -1,4 +1,8 @@
 ---
 layout: default
 ---
-...
+<ul>
+{% for category in site.categories %}
+  <li>{{ category.name }}</li>
+{% endfor %}
+</ul>
