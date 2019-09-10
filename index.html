@@ -8,7 +8,7 @@ layout: default
     id: {{ article.id }}
     path: {{ article.path }}
     categories: {{ article.categories }}
-    categories: {{ article.path | split "/" }}
+    categories: {{ article.path | split: "/" }}
     tags: {{ article.tags }}
     next: {{ article.next }}
   </li>
