@@ -1,2 +1,3 @@
 collections:
-   - articles
+   articles:
+      - output: true
