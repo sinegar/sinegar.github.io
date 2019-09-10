@@ -8,11 +8,10 @@ layout: default
     id: {{ article.id }}
     path: {{ article.path }}
     dir: {{ article.dir }} 
-    url: {{ article.url }} 
     categories: {{ article.categories }}
     categories: {{ article.path | split: "/" | shift | reverse | shift }}
     tags: {{ article.tags }}
-    next: {{ article.next | jsonify }}
+    next: {{ article.next}}
   </li>
 {% endfor %}
 </ul>
