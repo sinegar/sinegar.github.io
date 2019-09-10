@@ -3,6 +3,11 @@ layout: default
 ---
 <ul>
 {% for article in site.articles %}
-  <li>{{ article.title }}: {{ article.date }}, {{ article.collection }} </li>
+  <li>{{ article.title }}:
+    collection: {{ article.collection }} 
+    id: {{ article.id }} 
+    collection: {{ article.collection }} 
+    collection: {{ article.collection }} 
+  </li>
 {% endfor %}
 </ul>
