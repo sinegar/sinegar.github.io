@@ -5,6 +5,7 @@ layout: default
 {% for article in site.articles %}
   <li>{{ article.title }}:
     collection: {{ article.collection }}
+    collection: {{ article.collection.label }}
     id: {{ article.id }}
     path: {{ article.path }}
     dir: {{ article.dir }} 
