@@ -5,7 +5,6 @@ layout: default
 {% for article in site.articles %}
   <li>{{ article.title }}:
     collection: {{ article.collection }}
-    collection: {{ article.collection.label }}
     id: {{ article.id }}
     path: {{ article.path }}
     dir: {{ article.dir }} 
@@ -13,7 +12,8 @@ layout: default
     categories: {{ article.categories }}
     categories: {{ article.path | split: "/" | shift | reverse | shift }}
     tags: {{ article.tags }}
-    next json: {{ article.next | jsonify }}
+    next : {{ article.next.url }}
+    json: {{ article | jsonify }}
   </li>
 {% endfor %}
 </ul>
