@@ -13,7 +13,7 @@ layout: default
     categories: {{ article.categories }}
     categories: {{ article.path | split: "/" | shift | reverse | shift }}
     tags: {{ article.tags }}
-    next: {{ article.next.url }}
+    next json: {{ article.next |jsonify }}
   </li>
 {% endfor %}
 </ul>
